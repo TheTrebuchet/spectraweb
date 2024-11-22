@@ -17,13 +17,10 @@
 
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function (event) {
-            document.getElementById("download-to-svg").onclick = function () {
-                var fileName = "custom.svg"
-                var url = "data:image/svg+xml;utf8," + encodeURIComponent(paper.project.exportSVG({ asString: true }));
-                var link = document.createElement("a");
-                link.download = fileName;
-                link.href = url;
-                link.click();
+            document.getElementById("open-file").onclick = function () {
+                //var fileName = "custom.svg"
+                //var url = "data:image/svg+xml;utf8," + encodeURIComponent(paper.project.exportSVG({ asString: true }));
+                //var link = document.createElement("a");
             }
         });
     </script>
